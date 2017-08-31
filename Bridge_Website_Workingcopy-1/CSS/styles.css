@@ -1,0 +1,214 @@
+body {
+  background-color: white;
+  margin: 0px; }
+
+#wrapper {
+  margin: 0 auto;
+  max-width: 1224px;
+  min-width: 400px;
+  height: 1550px;
+  background-image: url("../images/background.png");
+  background-position: center; }
+
+h1 {
+  font-family: Roboto;
+  font-weight: 100;
+  font-size: 32px;
+  margin-bottom: 0;
+  margin-top: 40px; }
+
+h2 {
+  font-family: Roboto;
+  font-weight: 100;
+  font-size: 22px;
+  color: #ff4930;
+  margin: 0;
+  margin-bottom: 25px; }
+
+p {
+  font-family: Roboto;
+  font-weight: 100;
+  font-size: 15px;
+  opacity: 0.75;
+  font-weight: 300;
+  margin-bottom: 20px; }
+
+hr {
+  width: 40%; }
+
+.boldtext {
+  font-weight: bold;
+  font-style: oblique; }
+
+.bannerimage {
+  position: relative;
+  max-width: 1224px;
+  margin: 0px auto;
+  background-image: url("../images/bannerimage.png");
+  height: auto;
+  background-position: no-repeat;
+  background-size: 100%;
+  text-align: center; }
+
+.logo {
+  padding: 90px;
+  width: 400px; }
+
+.gridbase {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 470px 550px 520px 120px; }
+
+.grid {
+  text-align: center; }
+
+.grid2 {
+  grid-column-start: span 2;
+  text-align: center; }
+
+h2 + p {
+  padding-top: 30px; }
+
+.grid2 p {
+  padding-left: 80px;
+  padding-right: 80px; }
+
+.grid5 {
+  background-color: white;
+  margin: 0 auto;
+  padding-left: 120px;
+  padding-right: 120px; }
+
+.grid7 {
+  background-color: white; }
+
+.grid7 iframe {
+  width: 100%; }
+
+.grid6 {
+  margin-bottom: 0;
+  grid-column-start: span 2;
+  background-color: grey;
+  background-image: url("../images/background.png"); }
+
+.footerlogo {
+  height: 60%;
+  float: left;
+  margin: 30px; }
+
+.logogrid {
+  padding-top: 20px;
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 160px 160px; }
+
+.logodiv img {
+  height: 100%;
+  width: 100%;
+  max-height: 115px;
+  max-width: 180px; }
+
+.logodiv:hover {
+  opacity: 0.7; }
+
+/*BUTTON CSS*/
+.buttondiv {
+  position: relative;
+  width: 400px;
+  text-align: center;
+  margin: 0 auto; }
+
+.text {
+  opacity: 0.0;
+  font-family: sans-serif;
+  font-size: 14px;
+  -webkit-transition: opacity 1s; }
+
+.largeimg {
+  position: absolute;
+  left: 10px;
+  -webkit-transition: opacity 1s; }
+
+.smallimg {
+  opacity: 0.0;
+  height: 80px;
+  width: 80px; }
+
+.buttondiv:hover .largeimg {
+  opacity: 0.7; }
+
+/*Hover css*/
+.buttondiv:hover .text {
+  opacity: 1.0; }
+
+.buttondiv:hover .smallimg {
+  opacity: 1.0; }
+
+/*END OF BUTTON CSS*/
+.fa {
+  margin-top: 4px;
+  margin-right: 4px;
+  float: right;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: black; }
+
+.fa:hover {
+  opacity: 0.7; }
+
+.toparrow {
+  margin-top: 4px;
+  float: left;
+  font-size: 30px;
+  text-decoration: none; }
+
+.socialdiv {
+  width: 40%;
+  float: right; }
+
+.footerlogodiv {
+  width: 60%;
+  float: left; }
+
+@media screen and (max-width: 1000px) {
+  .gridbase {
+    grid-template-columns: 100%;
+    grid-template-rows: auto 550px 550px 550px 550px 120px; }
+
+  .grid2, .grid6 {
+    grid-column-start: span 1; }
+
+  .grid2 p {
+    padding-left: 40px;
+    padding-right: 40px; }
+
+  .grid5 {
+    padding-left: 30px;
+    padding-right: 30px; }
+
+  .bannerimage {
+    background-size: 1000px; }
+
+  .logo {
+    padding: 40px;
+    width: 270px; }
+
+  .footerlogo {
+    width: 150px;
+    height: auto; }
+
+  .fa {
+    font-size: 20px;
+    padding: 10px;
+    width: 20px; }
+
+  .toparrow {
+    font-size: 30px;
+    padding: 5px;
+    border: none; } }
